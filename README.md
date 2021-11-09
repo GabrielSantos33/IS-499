@@ -192,9 +192,7 @@ test = pd.concat([X_test, y_test], axis=1)
 
 #### Deciding the cut-off
 
-<p align="center">
-  <img src="data/cutoff.JPG" width="350" title="cutoff">
-</p>
+![cutoff](https://user-images.githubusercontent.com/53054596/140944460-86881496-dda3-458b-90aa-8fedb3289938.jpg)
 
 - We can now plot AUC curves of the subsequent models on both the train and test data.We can see that the train AUC keeps increasing while the test AUC stabalizes and then decreases.
 - When deciding on how many variables to keep in the model, once we take into account that **test AUC is as high as possible** and the **model should have least variables possible**.
@@ -210,6 +208,8 @@ test = pd.concat([X_test, y_test], axis=1)
 
 #### **Cumulative gains curve** is constructed as follows :
 
+![cumulative_gains](https://user-images.githubusercontent.com/53054596/140944707-576f3bb9-fcda-44f9-bd4e-5dc57c220293.jpg)
+
 <p align="center">
   <img src="data/cumulative_gains.JPG" width="350" title="cumulative_gains">
 </p>
@@ -218,6 +218,8 @@ test = pd.concat([X_test, y_test], axis=1)
 - On the horizontal axis of cumulative gains curve, it is indicated which percentage of the observations is considered. For instance, 30% of the observations with the highest probabilty to be target is considered.
 - On the vertical axis, the curve indicates which percentage of all targets is included in this group. For instance, if the cumulative gain is 70% at 30%, it means we are taking the top 30% observations with highest probabilty to be target, this group contains already 70% of all targets. 
 
+
+![cum_gain](https://user-images.githubusercontent.com/53054596/140944818-8db6fc19-e0fb-4cf5-9da5-a5a9b1e5c787.jpg)
 <p align="center">
   <img src="data/cum_gain.JPG" width="350" title="cumulative_gains">
 </p>
@@ -239,6 +241,7 @@ plt.show()
 ### The Lift Curve
 - In addition to the cumulative gains curve, the lift curve is a widely used visualisation of model performance.
 
+![lift_curve](https://user-images.githubusercontent.com/53054596/140944948-be459573-d3c3-4271-9d74-b651ad7353db.jpg)
 <p align="center">
   <img src="data/lift_curve.JPG" width="350" title="lift_curve">
 </p>
@@ -248,6 +251,8 @@ plt.show()
 - As another example, consider the lift at 50%, and assume that the top 50% observations contain 10% targets. As 10% is 2 times 5%, the average percentage of targets, the lift is 2 at 50%.
 
 #### Lift curve interpretation
+
+![lift_curve_interpret](https://user-images.githubusercontent.com/53054596/140945056-405996ff-dc2c-4e4d-a58f-45929f168dd1.jpg)
 
 <p align="center">
   <img src="data/lift_curve_interpret.JPG" width="350" title="lift_curve_interpretation">
@@ -307,6 +312,8 @@ print(profit(perc_targets, perc_selected, population_size, reward_target, cost_c
 
 #### Predictor insights graphs for categorical variable
 
+![predictor_insights_graph](https://user-images.githubusercontent.com/53054596/140945158-82ab7908-f4d4-4d4a-b05c-59b91208cc62.jpg)
+
 <p align="center">
   <img src="data/predictor_insights_graph.JPG" width="350" title="predictor_insights_graph">
 </p>
@@ -316,6 +323,8 @@ print(profit(perc_targets, perc_selected, population_size, reward_target, cost_c
 - In this graph, we can see that the higher someones income is the more likely he is to donate for the campaign. **This interpretation is logical, so it makes sense to keep variables related to income in the model.**
 
 #### Predictor insights graphs for continous variable
+
+![PIG_continuous](https://user-images.githubusercontent.com/53054596/140945243-5a537fd2-d869-4363-a8b4-4e3ea0cef4a2.jpg)
 
 <p align="center">
   <img src="data/PIG_continuous.JPG" width="350" title="PIG_continuous">
