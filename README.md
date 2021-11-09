@@ -170,10 +170,6 @@ for v in variables_forward:
 ![AUC](https://user-images.githubusercontent.com/53054596/140943693-33c115dd-3dc6-4620-bc1f-85b366726bf1.jpg)
 
 
-<p align="center">
-  <img src="https://github.com/GabrielSantos33/IS-499/blob/main/IS-499/data/AUC.JPG" width="350" title="AUC">
-</p>
-
 - If we plot the AUC values we obtain a curve that typically keeps increasing
 . However, if we use new data to evaluate subsequent models it doesn't increase, instead it decreases after a while. This phenomenon is called overfitting.
 - By adding more variables the accuracy on the data on which model is built increases, but the true performance of the model decreases because the complex model doesnt generalize to other data.
