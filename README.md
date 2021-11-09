@@ -1,4 +1,4 @@
-# Predictive-Analytics-in-Python
+# Predictive-Analytics-Using regression
 - Build ML model with meaningful variables. Use model for predictions.
 - **Predictive analytics** is an process that aims at predicting an event using historical data. This data is gathered in the analytical basetable.
 
