@@ -166,6 +166,10 @@ for v in variables_forward:
 
 - Inorder to do so, we can have a look at the **AUC values**. The order of the variables is given in the list `variables_forward`. For each variable in variable forward calculate the AUC values.
 
+
+![AUC](https://user-images.githubusercontent.com/53054596/140943693-33c115dd-3dc6-4620-bc1f-85b366726bf1.jpg)
+
+
 <p align="center">
   <img src="https://github.com/GabrielSantos33/IS-499/blob/main/IS-499/data/AUC.JPG" width="350" title="AUC">
 </p>
