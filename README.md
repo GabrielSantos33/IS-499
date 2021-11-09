@@ -167,7 +167,7 @@ for v in variables_forward:
 - Inorder to do so, we can have a look at the **AUC values**. The order of the variables is given in the list `variables_forward`. For each variable in variable forward calculate the AUC values.
 
 <p align="center">
-  <img src="data/AUC.JPG" width="350" title="AUC">
+  <img src="IS-499/data/AUC.JPG" width="350" title="AUC">
 </p>
 
 - If we plot the AUC values we obtain a curve that typically keeps increasing
